@@ -93,3 +93,10 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `go mod vendor`, requires golang"
+-   id: tokolint
+    name: 'tokolint'
+    entry: run-tokolint.sh
+    types: [go]
+    language: 'script'
+    pass_filenames: false
+    description: "Runs `tokolint`, requires https://github.com/tokopedia/tokolint"
