@@ -100,3 +100,14 @@
     language: 'script'
     pass_filenames: false
     description: "Runs `tokolint`, requires https://github.com/tokopedia/tokolint"
+-   id: single-domain
+    name: 'single-domain'
+    entry: run-single-domain.sh
+    language: 'script'
+    description: Prevents changes that affects multiple app domain
+-   id: go-isolated-unit-tests
+    name: 'go-isolated-unit-tests'
+    entry: run-go-unit-tests-domain.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `go test` in an isolated domain"
